@@ -1,0 +1,19 @@
+class Rectangulo:
+    def __init__(self, base, altura):
+        self.base=base
+        self.altura=altura
+        
+    def area(self):
+        return self.base*self.altura
+    
+    def perimetro(self):
+        return 2*(self.base+self.altura)
+    
+
+base=int(input("Proporciona la base del rectangulo: "))
+altura=int(input("Proprociona la altura del rectangulo: "))
+
+rectangulo=Rectangulo(base,altura)
+print("El area del rectangulo es: " , rectangulo.area())
+print("El perimetro del rectangulo es: ", rectangulo.perimetro())
+
